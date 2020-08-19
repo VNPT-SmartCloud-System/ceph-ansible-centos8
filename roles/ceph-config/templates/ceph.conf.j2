@@ -122,8 +122,8 @@ log file = {{ rbd_client_log_file }} # must be writable by QEMU and allowed by S
 {% if inventory_hostname in groups.get(osd_group_name, []) or multi_osd_backend | bool %}
 {% if osd_objectstore == 'filestore' or multi_osd_backend | bool %}
 [mon]
-#mon osd full ratio = {{ mon_osd_full_ratio }}
-#mon osd nearfull ratio = {{ mon_osd_nearfull_ratio }}
+mon osd full ratio = {{ mon_osd_full_ratio }}
+mon osd nearfull ratio = {{ mon_osd_nearfull_ratio }}
 
 [osd]
 osd mkfs type = {{ osd_mkfs_type }}
