@@ -1,0 +1,9 @@
+---
+- name: Set hostname
+  hostname:
+    name: "{{ inventory_hostname }}"
+
+- name: Update packages for Servers
+  yum:
+     name: '*'
+     state: latest
