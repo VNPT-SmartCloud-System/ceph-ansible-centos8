@@ -30,7 +30,7 @@ openstack_pools:
 dashboard_protocol: https
 dashboard_admin_user: admin
 dashboard_admin_password: Vnpt@!2020
-mon_osd_full_ratio: .99
+mon_osd_full_ratio: .90
 mon_osd_nearfull_ratio: .50
 multi_osd_backend: yes
 #
